@@ -7,12 +7,12 @@ A [Claude Code](https://code.claude.com/docs) plugin marketplace.
 Add the marketplace, then install plugins from it:
 
 ```bash
-# Add this marketplace (GitHub shorthand once pushed, or a local path)
-/plugin marketplace add <owner>/agent-plugins
+# Add this marketplace (GitHub shorthand, or a local path)
+/plugin marketplace add jasiek/agent-plugins
 /plugin marketplace add ./path/to/agent-plugins   # local checkout
 
 # Browse and install
-/plugin install example-plugin@agent-plugins
+/plugin install genealogy@agent-plugins
 ```
 
 Manage it later:
@@ -29,19 +29,13 @@ Manage it later:
 .
 ├── .claude-plugin/
 │   └── marketplace.json        # Marketplace manifest — lists all plugins
-├── plugins/                    # pluginRoot — one directory per plugin
-│   └── example-plugin/
-│       ├── .claude-plugin/
-│       │   └── plugin.json      # Plugin manifest
-│       ├── commands/            # Slash commands (auto-discovered .md files)
-│       │   └── hello.md
-│       ├── agents/              # Subagents (auto-discovered .md files)
-│       │   └── example-agent.md
-│       └── skills/              # Skills (auto-discovered <name>/SKILL.md)
-│           └── example-skill/
-│               └── SKILL.md
+├── plugins/                    # pluginRoot — local plugins live here (one dir each)
 └── README.md
 ```
+
+Plugins may also be hosted in their own repositories and referenced from
+`marketplace.json` via a `github` (or git URL) source — for example the
+`genealogy` plugin lives at `jasiek/genealogy-plugin`.
 
 ## Adding a new plugin
 
