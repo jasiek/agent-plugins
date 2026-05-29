@@ -28,7 +28,9 @@
       "name": "genealogy",
       "source": {
         "source": "github",
-        "repo": "jasiek/genealogy-plugin"
+        "repo": "jasiek/genealogy-plugin",
+        "ref": "master",
+        "sha": "e0948a8209b4667d21e15bcd6c9f55b44afc0f68"
       },
       "description": "Query different data sources for information about your ancestors. Bundles an MCP server for automatic genealogy research in Poland.",
       "version": "0.0.1",
