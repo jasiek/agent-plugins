@@ -1,0 +1,42 @@
+{
+  "name": "agent-plugins",
+  "description": "A marketplace of Claude Code plugins.",
+  "version": "0.1.0",
+  "owner": {
+    "name": "Jan Szumiec",
+    "email": "jan.szumiec@gmail.com"
+  },
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "example-plugin",
+      "displayName": "Example Plugin",
+      "source": "./plugins/example-plugin",
+      "description": "A starter plugin demonstrating a command, an agent, and a skill.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Jan Szumiec",
+        "email": "jan.szumiec@gmail.com"
+      },
+      "license": "MIT",
+      "keywords": ["example", "starter", "template"],
+      "category": "productivity"
+    },
+    {
+      "name": "genealogy",
+      "source": {
+        "source": "github",
+        "repo": "jasiek/genealogy-plugin"
+      },
+      "description": "Query different data sources for information about your ancestors. Bundles an MCP server for automatic genealogy research in Poland.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Jan Szumiec"
+      },
+      "keywords": ["genealogy", "ancestry", "research", "poland", "mcp"],
+      "category": "research"
+    }
+  ]
+}
